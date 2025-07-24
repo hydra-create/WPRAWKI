@@ -21,3 +21,20 @@ for znak in tekst:
 
 # Słów w tekście jest o 1 więcej niż spacji
 print("Liczba słów w tekscie: ", spacja + 1)
+
+# Wprawki Python - zgadnij numer
+
+secret_number = 555
+
+print("""Witaj w grze!
+Zgadnij mój sekretny numer.
+Wprowadź liczbę całkowitą.
+Powodzenia!""")
+
+user_number = int(input("Zgadnij numer: "))
+
+while secret_number != user_number:
+    print("Ha! ha! Utknąłeś w mojej pętli!")
+    user_number = int(input("Zgadnij numer: "))
+    
+print("Dobra robota! Jesteś wolny!")
